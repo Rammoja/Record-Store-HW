@@ -1,3 +1,5 @@
+package Accessory;
+
 public abstract class Accessory {
     private String make;
     private double buying;

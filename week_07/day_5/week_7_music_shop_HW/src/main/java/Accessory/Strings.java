@@ -1,3 +1,5 @@
+package Accessory;
+
 public class Strings extends Accessory {
 
 

@@ -1,3 +1,4 @@
+import Instruments.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -43,5 +44,13 @@ public class DrumsTest {
         public void canChangeSellingPrice(){
             drums.changeSellingPrice(47.00);
             assertEquals(47.00,drums.getSellingPrice(), 0.01);
+
+        }
+
+        @Test
+        public void getPlayDrums(){
+        assertEquals("Drums Playing Badda Boom", drums.play("Badda Boom"));
     }
+
+
 }

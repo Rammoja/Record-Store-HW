@@ -1,7 +1,9 @@
+import Instruments.*;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+
 
 public class GuitarTest {
 
@@ -31,5 +33,10 @@ public class GuitarTest {
     @Test
     public void canSell(){
         assertEquals(32.00,guitar.getSellingPrice(), 0.01);
+    }
+
+    @Test
+    public void getPlayGuitar(){
+        assertEquals("Guitar Playing Twang Twang", guitar.play("Twang Twang"));
     }
 }

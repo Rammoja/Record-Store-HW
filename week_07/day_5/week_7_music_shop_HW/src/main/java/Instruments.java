@@ -13,19 +13,29 @@ public abstract class Instruments {
     }
 
     public String getMake(){
-        return  this.make;
+        return this.make;
     }
 
     public String getModel(){
-        return  this.model;
+        return this.model;
     }
 
     public double getSellingPrice(){
-        return  this.selling;
+        return this.selling;
     }
 
     public double getBuyingPrice(){
-        return  this.buying;
+        return this.buying;
+    }
+
+    public void changeBuyingPrice(double newBuyingPrice) {
+        this.buying = newBuyingPrice;
+
+    }
+
+    public void changeSellingPrice(double newSellingPrice) {
+        this.selling = newSellingPrice;
+
     }
 
 }

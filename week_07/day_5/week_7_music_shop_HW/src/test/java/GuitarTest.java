@@ -11,7 +11,7 @@ public class GuitarTest {
 
     @Before
     public void before(){
-        this.guitar = new Guitar("Fender", "Electric", 20.00, 32.00);
+        this.guitar = new Guitar("Fender", "Electric", 20.00, 32.00, 15);
 
     }
 
@@ -38,5 +38,10 @@ public class GuitarTest {
     @Test
     public void getPlayGuitar(){
         assertEquals("Guitar Playing Twang Twang", guitar.play("Twang Twang"));
+    }
+
+    @Test
+    public void canGetQuantity(){
+        assertEquals(15, guitar.getQuantity());
     }
 }

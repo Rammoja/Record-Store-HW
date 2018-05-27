@@ -4,11 +4,13 @@ public abstract class Accessory {
     private String make;
     private double buying;
     private double selling;
+    private int quantity;
 
-    public Accessory(String make, double buying, double selling){
+    public Accessory(String make, double buying, double selling, int quantity){
         this.make = make;
         this.buying = buying;
         this.selling = selling;
+        this.quantity = quantity;
     }
 
     public String getMake(){
@@ -21,5 +23,9 @@ public abstract class Accessory {
 
     public double getBuyingPrice(){
         return  this.buying;
+    }
+
+    public int getQuantity() {
+        return this.quantity;
     }
 }

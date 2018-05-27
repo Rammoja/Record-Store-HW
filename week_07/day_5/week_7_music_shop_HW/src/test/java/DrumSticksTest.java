@@ -12,7 +12,7 @@ public class DrumSticksTest {
 
     @Before
     public void before(){
-        this.drumSticks = new DrumSticks ("Pro-Mark", 7.00, 10.00);
+        this.drumSticks = new DrumSticks ("Pro-Mark", 7.00, 10.00, 20);
 
     }
 
@@ -30,6 +30,11 @@ public class DrumSticksTest {
     @Test
     public void canSell(){
         assertEquals(10.00,drumSticks.getSellingPrice(), 0.01);
+    }
+
+    @Test
+    public void canGetQuantity(){
+        assertEquals(20, drumSticks.getQuantity());
     }
 
 

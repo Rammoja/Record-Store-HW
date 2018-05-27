@@ -1,17 +1,19 @@
 package Instruments;
 
 public abstract class Instruments {
-    private String make;
+    protected String make;
     private String model;
     private double buying;
     private double selling;
+    private int quantity;
 
 
-    public Instruments(String make, String model, double buying, double selling){
+    public Instruments(String make, String model, double buying, double selling, int quantity){
         this.make = make;
         this.model = model;
         this.buying = buying;
         this.selling = selling;
+        this.quantity = quantity;
     }
 
     public String getMake(){
@@ -40,4 +42,7 @@ public abstract class Instruments {
 
     }
 
+    public int getQuantity() {
+        return this.quantity;
+    }
 }

@@ -12,7 +12,9 @@ public class Drums extends Instruments implements IPlay{
         return "Drums Playing " + playing;
     }
 
-
+    public int sellDrums(int sellDrums) {
+        return 11;
+    }
 
 }
 

@@ -56,6 +56,11 @@ public class DrumsTest {
         assertEquals(12, drums.getQuantity());
     }
 
+    @Test
+    public void canSellDrums(){
+        assertEquals(11, drums.sellDrums(11));
+    }
+
 
 
 

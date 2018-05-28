@@ -2,7 +2,7 @@ package Instruments;
 import Interface.IPlay;
 import Interface.ISell;
 
-public class Drums extends Instruments implements IPlay{
+public class Drums extends Instruments implements IPlay, ISell {
 
     public Drums( String make, String model, double buying, double selling, int quantity){
         super(make,model,buying,selling, quantity);
@@ -12,8 +12,8 @@ public class Drums extends Instruments implements IPlay{
         return "Drums Playing " + playing;
     }
 
-    public int sellDrums(int sellDrums) {
-        return 11;
+    public double sell(double sellDrums) {
+        return this.sell(47.00);
     }
 
 }

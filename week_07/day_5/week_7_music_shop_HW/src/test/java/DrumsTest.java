@@ -58,7 +58,7 @@ public class DrumsTest {
 
     @Test
     public void canSellDrums(){
-        assertEquals(11, drums.sellDrums(11));
+        assertEquals(1, drums.sell(47.00),0.01);
     }
 
 
